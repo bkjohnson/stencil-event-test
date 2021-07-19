@@ -1,5 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
+import { defineCustomElements } from 'web-components/loader';
+
+defineCustomElements();
+
 
 function App() {
   return (
