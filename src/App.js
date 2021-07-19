@@ -1,7 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
-import { defineCustomElements } from 'web-components/loader';
+import 'web-components/dist/component-library/component-library.css';
 
+import { defineCustomElements } from 'web-components/loader';
 defineCustomElements();
 
 
@@ -21,6 +22,10 @@ function App() {
         >
           Learn React
         </a>
+        <va-alert onFoo={() => console.log('foo')} onClose={() => console.log('closing')} closeable>
+          Foo
+        </va-alert>
+
       </header>
     </div>
   );
